@@ -1,0 +1,12 @@
+git 高端操作简易实践
+
+代码如下
+touch ~/.bashrc
+echo 'alias ga="git add"'>> ~/.bashrc
+echo 'alias gc="git commit -v"'>> ~/.bashrc
+echo 'alias gl="git pull"'>> ~/.bashrc
+echo 'alias gp="git push"'>> ~/.bashrc
+echo 'alias gco="git checkout"'>> ~/.bashrc
+echo 'alias gst="git status -sb"'>> ~/.bashrc
+
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -- | less"
